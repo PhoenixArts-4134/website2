@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>联系 | EZone 教育中心</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-wrap">
+        <a href="../index.html" class="logo" aria-label="EZone home">
+          <img src="/3.png" alt="EZone 教育中心標誌" />
+        </a>
+        <nav class="nav" id="navMenu" aria-label="主导航">
+          <a href="../index.html" class="nav-link">首页</a>
+          <a href="../programs/index.html" class="nav-link">课程</a>
+          <a href="../practice/index.html" class="nav-link">实践与发展</a>
+          <a href="../about/index.html" class="nav-link">关于我们</a>
+          <a href="index.html" class="nav-link">联系</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="lang-switch" id="languageToggle" href="../../en/contact/" aria-label="Switch to English">
+            <span class="lang-option is-active" data-lang="zh">中文</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option" data-lang="en">EN</span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="section-shell page-shell">
+          <p class="section-label">联系我们</p>
+          <h1>迈出下一步，开启你的学习旅程。</h1>
+        </div>
+      </section>
+
+      <section class="section-shell page-content contact-layout">
+        <div style="margin: 0 0 2rem; display: grid; gap: 1rem;">
+          <img
+            src="../../EZone_Best_Photos_By_Category/10_diverse_adult_workshop/03_education-community-group.jpg"
+            alt="社区教育工作坊"
+            style="width: 100%; height: 360px; object-fit: cover; border-radius: 20px; box-shadow: 0 16px 38px rgba(15, 23, 42, 0.12);"
+          />
+        </div>
+        <div class="contact-copy">
+          <h2>迈出下一步</h2>
+          <p>无论您希望提升新专业技能、扩展现有知识、了解课程内容，或探讨合作机会，我们都很乐意与您交流。</p>
+          <div class="contact-actions">
+            <a href="../programs/index.html" class="primary-btn">课程咨询</a>
+            <a href="../about/index.html" class="secondary-btn">合作咨询</a>
+          </div>
+          <div class="contact-details">
+            <h3>EZone 教育中心</h3>
+            <p>专业教育 · 实操培训 · 职业发展</p>
+            <p><a href="https://ezonedu.ca" target="_blank" rel="noreferrer">ezonedu.ca</a></p>
+            <p><a href="mailto:info.ezonedu@gmail.com">info.ezonedu@gmail.com</a></p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            全名
+            <input type="text" name="name" placeholder="请输入您的名字" required />
+          </label>
+          <label>
+            邮箱
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            咨询类型
+            <select name="inquiryType">
+              <option>课程咨询</option>
+              <option>合作咨询</option>
+              <option>一般问题</option>
+            </select>
+          </label>
+          <label>
+            留言
+            <textarea name="message" rows="5" placeholder="告诉我们您需要的帮助。" required></textarea>
+          </label>
+          <button type="submit" class="primary-btn">发送咨询</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <div class="logo"><img src="/3.png" alt="EZone 教育中心標誌" /></div>
+          <p>专业教育 · 实操培训 · 职业发展</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">首页</a>
+          <a href="../programs/index.html">课程</a>
+          <a href="../practice/index.html">实践与发展</a>
+          <a href="../about/index.html">关于我们</a>
+          <a href="index.html">联系</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://ezonedu.ca" target="_blank" rel="noreferrer">ezonedu.ca</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">REDnote</a>
+          <a href="#">WeChat</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© <span id="year"></span> EZone Education Centre</p></div>
+    </footer>
+
+    <script src="../../script.js"></script>
+  </body>
+</html>
