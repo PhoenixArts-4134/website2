@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EZone 教育中心</title>
+  <meta name="description" content="EZone 教育中心提供專業教育、實操培訓、持續進修與職業導向的學習路徑。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-wrap">
+      <a href="./" class="logo" aria-label="EZone home">
+        <img src="/3.png" alt="EZone 教育中心標誌" />
+      </a>
+      <nav class="nav" id="navMenu" aria-label="主導覽">
+        <a href="./" class="nav-link">首頁</a>
+        <a href="programs/" class="nav-link">課程</a>
+        <a href="practice/" class="nav-link">實踐與發展</a>
+        <a href="about/" class="nav-link">關於我們</a>
+        <a href="contact/" class="nav-link">聯絡</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="lang-switch" id="languageToggle" href="../en/" aria-label="Switch to English">
+          <span class="lang-option is-active" data-lang="zh">中文</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-option" data-lang="en">EN</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">專業教育</span>
+          <h1>EZone 教育中心</h1>
+          <p class="subtitle">專業教育 · 實操培訓 · 職業發展</p>
+          <p class="lead">將專業教育、實踐培訓與社區資源連接起來，打造從學習到真實實踐的有意義發展路徑。</p>
+          <p class="tagline">將學習轉化為實踐技能。</p>
+          <div class="hero-actions">
+            <a href="programs/" class="primary-btn">探索課程</a>
+            <a href="contact/" class="secondary-btn">聯絡我們</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <strong>6+</strong>
+              <span>專業方向</span>
+            </div>
+            <div>
+              <strong>2021</strong>
+              <span>社群成長</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>實作導向</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card visual-card-main">
+            <img src="../EZone_Best_Photos_By_Category/01_adult_students_classroom/01_adult-professional-classroom.jpg" alt="專業課堂教學" />
+          </div>
+          <div class="visual-card visual-card-mini">
+            <img src="../EZone_Best_Photos_By_Category/09_instructor_wellness_demo/02_hands-on-wellness-training.jpg" alt="實作培訓" />
+          </div>
+          <div class="floating-badge">
+            <span class="badge-label">學習模式</span>
+            <strong>教育 + 實踐 + 成長</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <p class="section-label">我們的服務</p>
+      <h2>圍繞真實實踐打造的學習路徑</h2>
+      <div class="feature-grid">
+        <a class="feature-card" href="programs/">
+          <h3>專業培訓</h3>
+          <p>結構化課程，幫助你建立職場準備能力與實用技能認證。</p>
+        </a>
+        <a class="feature-card" href="practice/">
+          <h3>實操練習</h3>
+          <p>透過引導式實踐，強化技術能力與應用經驗。</p>
+        </a>
+        <a class="feature-card" href="about/">
+          <h3>關於 EZone</h3>
+          <p>有意義的教育不止於完成課程——知識需要被理解與實踐。</p>
+        </a>
+        <a class="feature-card" href="contact/">
+          <h3>聯絡我們</h3>
+          <p>對課程或報名有疑問？我們樂意協助你展開學習之旅。</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <div class="logo"><img src="/3.png" alt="EZone 教育中心標誌" /></div>
+        <p>專業教育 · 實操培訓 · 職業發展</p>
+      </div>
+      <div class="footer-links"><a href="./">首頁</a><a href="programs/">課程</a><a href="practice/">實踐與發展</a><a
+          href="about/">關於我們</a><a href="contact/">聯絡</a></div>
+      <div class="footer-socials"><a href="https://ezonedu.ca" target="_blank" rel="noreferrer">ezonedu.ca</a><a
+          href="#" target="_blank" rel="noreferrer">Instagram</a><a href="#" target="_blank"
+          rel="noreferrer">Facebook</a><a href="#" target="_blank" rel="noreferrer">REDnote</a><a href="#"
+          target="_blank" rel="noreferrer">WeChat</a></div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> EZone 教育中心</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
