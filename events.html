@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活动 Events | EZone Education Centre</title>
+    <meta
+      name="description"
+      content="中医针灸师·整骨师成才之路高峰论坛：温哥华、卡加利、爱民顿四场活动，免费参加。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .events-list { display: flex; flex-direction: column; gap: 2.5rem; }
+      .event-card {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 2rem;
+        background: #fff;
+        border: 1px solid rgba(23, 21, 18, 0.08);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(23, 21, 18, 0.06);
+      }
+      .event-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .event-info { padding: 1.75rem 1.75rem 1.75rem 0; }
+      .event-date {
+        display: inline-block;
+        background: #7a1f1f;
+        color: #fff;
+        font-weight: 700;
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        margin-bottom: 0.75rem;
+      }
+      .event-info h3 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+      .event-meta { color: #555; margin: 0 0 1rem; line-height: 1.7; }
+      .event-info h4 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+      .event-info ul { margin: 0 0 0.5rem 1.2rem; line-height: 1.7; }
+      .event-signup { margin-top: 1rem; font-weight: 600; }
+      @media (max-width: 760px) {
+        .event-card { grid-template-columns: 1fr; }
+        .event-card img { max-height: 420px; }
+        .event-info { padding: 0 1.25rem 1.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-wrap">
+        <a href="index.html" class="logo" aria-label="EZone home">
+          <img src="/3.png" alt="EZone Education Centre logo" />
+        </a>
+
+        <nav class="nav" id="navMenu" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="programs.html" class="nav-link">Programs</a>
+          <a href="practice.html" class="nav-link">Practice &amp; Development</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="lang-switch" id="languageToggle" type="button" aria-label="Switch to Chinese">
+            <span class="lang-option" data-lang="zh">中文</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option is-active" data-lang="en">EN</span>
+          </button>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow">Upcoming Events</span>
+            <h1>中医针灸师·整骨师成才之路高峰论坛</h1>
+            <p class="subtitle">两省三市 · 四场活动 · 免费参加</p>
+            <p class="lead">温哥华、卡加利、爱民顿四场线下论坛，与执业医师、整骨师和 AI 导师面对面交流。扫码报名，免费入场。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <p class="section-label">活动一览</p>
+        <h2>四场论坛，按日期排序</h2>
+        <div class="events-list">
+
+          <article class="event-card">
+            <img src="events/vancouver-oct31.jpg" alt="温哥华第一场论坛海报" />
+            <div class="event-info">
+              <span class="event-date">10月31日（周六）1:00 PM · 温哥华第一场</span>
+              <h3>温哥华站 · 第一场</h3>
+              <p class="event-meta">地点：机场行政酒店 Fraser 会议大厅<br />7311 Westminster Hwy, Richmond</p>
+              <h4>论坛议题</h4>
+              <ul>
+                <li>真正有效的针灸技术是什么？</li>
+                <li>新手针灸师如何快速站稳加拿大职场？</li>
+                <li>从针灸师到诊所老板：如何打开收入上限？</li>
+                <li>大健康产业还有哪些商机？</li>
+                <li>现代 AI 赋能传统针灸：AI 刷题｜AI 开店｜AI 创新</li>
+              </ul>
+              <h4>主讲嘉宾</h4>
+              <ul>
+                <li>鲁家贤医师 — 加拿大执业中医师公会会长</li>
+                <li>漆一中 医师 — BC 省注册针灸师</li>
+                <li>王隆 中医师 — “凹凸脉法舌诊”体系创始人</li>
+                <li>楚然 教育顾问 — IHA 国际疗愈协会北美代表执行官</li>
+                <li>顾医师 — 注册中医师、注册针灸师</li>
+                <li>Mack AI 导师 — 北美 AI 协会会长、麻省理工 AI 工程师</li>
+              </ul>
+              <p class="event-signup">报名：扫码加好友，回复“针灸”报名免费线下论坛<br />电话：604-670-2122 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="events/vancouver-nov01.jpg" alt="温哥华第二场论坛海报" />
+            <div class="event-info">
+              <span class="event-date">11月1日（周日）1:00 PM · 温哥华第二场</span>
+              <h3>温哥华站 · 第二场</h3>
+              <p class="event-meta">地点：机场行政酒店 Fraser 会议大厅<br />7311 Westminster Hwy, Richmond</p>
+              <h4>论坛议题</h4>
+              <ul>
+                <li>真正有效的针灸技术是什么？</li>
+                <li>新手针灸师如何快速站稳加拿大职场？</li>
+                <li>探索中西整骨的临床之道</li>
+                <li>从针灸师到诊所老板：如何打开收入上限？</li>
+                <li>大健康产业还有哪些商机？</li>
+                <li>现代 AI 赋能传统针灸：AI 刷题｜AI 开店｜AI 创新</li>
+              </ul>
+              <h4>主讲嘉宾</h4>
+              <ul>
+                <li>鲁家贤医师 — 加拿大执业中医师公会会长</li>
+                <li>漆一中 医师 — BC 省注册针灸师</li>
+                <li>Troy Lee 医师 — BC 注册中医师、整骨治疗师（MOT）</li>
+                <li>楚然 教育顾问 — IHA 国际疗愈协会北美代表执行官</li>
+                <li>辛医师 — 注册中医师、注册针灸师</li>
+                <li>Mack AI 导师 — 北美 AI 协会会长、麻省理工 AI 工程师</li>
+              </ul>
+              <p class="event-signup">报名：扫码加好友，回复“针灸”报名免费线下论坛<br />电话：778-316-5678 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="events/calgary-nov02.jpg" alt="卡加利论坛海报" />
+            <div class="event-info">
+              <span class="event-date">11月2日（周一）6:00 PM · 卡加利站</span>
+              <h3>卡加利站</h3>
+              <p class="event-meta">地点：卡城中医药协会<br />#200, 114-3 Ave SE, Calgary（汇丰银行对面）</p>
+              <h4>论坛议题</h4>
+              <ul>
+                <li>按摩、整骨与运动训练的融合实践</li>
+                <li>新手针灸师如何快速站稳加拿大职场？</li>
+                <li>探索中西整骨的临床之道</li>
+                <li>大健康产业还有哪些商机？</li>
+                <li>现代 AI 赋能传统针灸：AI 刷题｜AI 开店｜AI 创新</li>
+              </ul>
+              <h4>主讲嘉宾</h4>
+              <ul>
+                <li>Frank Fu 医师 — AB 省注册中医师、全国青年中医协会理事</li>
+                <li>Chris Liao 医师 — 加拿大注册整骨师、传统整复治疗师</li>
+                <li>Zoe Zhao 医师 — AB 省注册按摩师、七项全能运动员</li>
+                <li>Mack AI 导师 — 北美 AI 协会会长、麻省理工 AI 工程师</li>
+                <li>楚然 教育顾问 — EZone 教育中心创办人、大健康教育 &amp; 策展顾问</li>
+              </ul>
+              <p class="event-signup">报名：扫码加好友，回复“论坛”报名免费线下论坛<br />电话：778-316-5678 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="events/edmonton-nov03.jpg" alt="爱民顿论坛海报" />
+            <div class="event-info">
+              <span class="event-date">11月3日（周二）5:30 PM · 爱民顿站</span>
+              <h3>爱民顿站</h3>
+              <p class="event-meta">地点：#202, 9618 42 Avenue, Edmonton AB<br />协办：美加集团阿尔伯塔分公司（AmCan）</p>
+              <h4>论坛议题</h4>
+              <ul>
+                <li>为什么要成为一名针灸师？</li>
+                <li>阿省针灸专业的过去、现在和未来</li>
+                <li>医学博士现场义诊</li>
+                <li>大健康产业还有哪些商机？</li>
+                <li>现代 AI 赋能传统针灸：AI 刷题｜AI 开店｜AI 创新</li>
+              </ul>
+              <h4>主讲嘉宾</h4>
+              <ul>
+                <li>王福麟 医生博士 — 特邀嘉宾、注册针灸师、1994 白求恩东方医学中心合伙创始人</li>
+                <li>Mack AI 导师 — 北美 AI 协会会长、麻省理工 AI 工程师</li>
+                <li>楚然 教育顾问 — EZone 教育中心创办人、大健康教育 &amp; 策展顾问</li>
+              </ul>
+              <p class="event-signup">报名：扫码加好友，回复“论坛”报名免费线下论坛<br />电话：778-316-5678 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <div class="logo"><img src="/3.png" alt="EZone Education Centre logo" /></div>
+          <p>Professional Education · Hands-On Training · Career Development</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="practice.html">Practice &amp; Development</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://ezonedu.ca" target="_blank" rel="noreferrer">ezonedu.ca</a>
+          <a href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="#" target="_blank" rel="noreferrer">REDnote</a>
+          <a href="#" target="_blank" rel="noreferrer">WeChat</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> EZone Education Centre</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
