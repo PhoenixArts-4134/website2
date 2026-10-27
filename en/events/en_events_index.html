@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | EZone Education Centre</title>
+    <meta
+      name="description"
+      content="Summit Forum: The Road to Becoming a TCM Acupuncturist & Osteopath. Four sessions in Vancouver, Calgary and Edmonton. Free admission."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      .events-list { display: flex; flex-direction: column; gap: 2.5rem; }
+      .event-card {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 2rem;
+        background: #fff;
+        border: 1px solid rgba(23, 21, 18, 0.08);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(23, 21, 18, 0.06);
+      }
+      .event-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .event-info { padding: 1.75rem 1.75rem 1.75rem 0; }
+      .event-date {
+        display: inline-block;
+        background: #7a1f1f;
+        color: #fff;
+        font-weight: 700;
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        margin-bottom: 0.75rem;
+      }
+      .event-info h3 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+      .event-meta { color: #555; margin: 0 0 1rem; line-height: 1.7; }
+      .event-info h4 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+      .event-info ul { margin: 0 0 0.5rem 1.2rem; line-height: 1.7; }
+      .event-signup { margin-top: 1rem; font-weight: 600; }
+      @media (max-width: 760px) {
+        .event-card { grid-template-columns: 1fr; }
+        .event-card img { max-height: 420px; }
+        .event-info { padding: 0 1.25rem 1.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-wrap">
+        <a href="../index.html" class="logo" aria-label="EZone home">
+          <img src="/3.png" alt="EZone Education Centre logo" />
+        </a>
+
+        <nav class="nav" id="navMenu" aria-label="Main navigation">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../programs/index.html" class="nav-link">Programs</a>
+          <a href="../practice/index.html" class="nav-link">Practice &amp; Development</a>
+          <a href="index.html" class="nav-link">Events</a>
+          <a href="../about/index.html" class="nav-link">About Us</a>
+          <a href="../contact/index.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="lang-switch" id="languageToggle" type="button" aria-label="Switch to Chinese">
+            <span class="lang-option" data-lang="zh">中文</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option is-active" data-lang="en">EN</span>
+          </button>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow">Upcoming Events</span>
+            <h1>Summit Forum: The Road to Becoming a TCM Acupuncturist &amp; Osteopath</h1>
+            <p class="subtitle">Two provinces · Three cities · Four sessions · Free admission</p>
+            <p class="lead">Four in-person forums in Vancouver, Calgary and Edmonton — meet practicing physicians, osteopaths and AI mentors face to face. Scan to register; admission is free.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <p class="section-label">Events at a Glance</p>
+        <h2>Four forums, in date order</h2>
+        <div class="events-list">
+
+          <article class="event-card">
+            <img src="/events/vancouver-oct31.jpg" alt="Vancouver Session 1 forum poster" />
+            <div class="event-info">
+              <span class="event-date">Saturday, October 31 · 1:00 PM · Vancouver Session 1</span>
+              <h3>Vancouver · Session 1</h3>
+              <p class="event-meta">Venue: Fraser Conference Hall, Airport Executive Hotel<br />7311 Westminster Hwy, Richmond</p>
+              <h4>Forum Topics</h4>
+              <ul>
+                <li>What does truly effective acupuncture technique look like?</li>
+                <li>How can new acupuncturists quickly establish themselves in the Canadian workplace?</li>
+                <li>From acupuncturist to clinic owner: how to break through the income ceiling</li>
+                <li>What business opportunities remain in the health &amp; wellness industry?</li>
+                <li>Modern AI empowering traditional acupuncture: AI exam prep | AI clinic setup | AI innovation</li>
+              </ul>
+              <h4>Featured Speakers</h4>
+              <ul>
+                <li>Dr. Lu Jiaxian — President, Canadian Association of Practicing TCM Physicians</li>
+                <li>Dr. Qi Yizhong — Registered Acupuncturist, BC</li>
+                <li>Dr. Wang Long — Founder of the “Concave-Convex Pulse &amp; Tongue Diagnosis” system</li>
+                <li>Chu Ran, Education Consultant — Executive Officer for North America, IHA International Healing Association</li>
+                <li>Dr. Gu — Registered TCM Practitioner &amp; Registered Acupuncturist</li>
+                <li>Mack, AI Mentor — President, AI Association of North America; MIT AI Engineer</li>
+              </ul>
+              <p class="event-signup">Register: scan the QR code, add us and reply “Acupuncture” to register for the free forum<br />Phone: 604-670-2122 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="/events/vancouver-nov01.jpg" alt="Vancouver Session 2 forum poster" />
+            <div class="event-info">
+              <span class="event-date">Sunday, November 1 · 1:00 PM · Vancouver Session 2</span>
+              <h3>Vancouver · Session 2</h3>
+              <p class="event-meta">Venue: Fraser Conference Hall, Airport Executive Hotel<br />7311 Westminster Hwy, Richmond</p>
+              <h4>Forum Topics</h4>
+              <ul>
+                <li>What does truly effective acupuncture technique look like?</li>
+                <li>How can new acupuncturists quickly establish themselves in the Canadian workplace?</li>
+                <li>Exploring the clinical path of Chinese &amp; Western osteopathy</li>
+                <li>From acupuncturist to clinic owner: how to break through the income ceiling</li>
+                <li>What business opportunities remain in the health &amp; wellness industry?</li>
+                <li>Modern AI empowering traditional acupuncture: AI exam prep | AI clinic setup | AI innovation</li>
+              </ul>
+              <h4>Featured Speakers</h4>
+              <ul>
+                <li>Dr. Lu Jiaxian — President, Canadian Association of Practicing TCM Physicians</li>
+                <li>Dr. Qi Yizhong — Registered Acupuncturist, BC</li>
+                <li>Dr. Troy Lee — BC Registered TCM Practitioner &amp; Osteopathic Manual Therapist (MOT)</li>
+                <li>Chu Ran, Education Consultant — Executive Officer for North America, IHA International Healing Association</li>
+                <li>Dr. Xin — Registered TCM Practitioner &amp; Registered Acupuncturist</li>
+                <li>Mack, AI Mentor — President, AI Association of North America; MIT AI Engineer</li>
+              </ul>
+              <p class="event-signup">Register: scan the QR code, add us and reply “Acupuncture” to register for the free forum<br />Phone: 778-316-5678 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="/events/calgary-nov02.jpg" alt="Calgary forum poster" />
+            <div class="event-info">
+              <span class="event-date">Monday, November 2 · 6:00 PM · Calgary</span>
+              <h3>Calgary</h3>
+              <p class="event-meta">Venue: Calgary TCM Association<br />#200, 114-3 Ave SE, Calgary (across from HSBC)</p>
+              <h4>Forum Topics</h4>
+              <ul>
+                <li>The integrated practice of massage, osteopathy &amp; athletic training</li>
+                <li>How can new acupuncturists quickly establish themselves in the Canadian workplace?</li>
+                <li>Exploring the clinical path of Chinese &amp; Western osteopathy</li>
+                <li>What business opportunities remain in the health &amp; wellness industry?</li>
+                <li>Modern AI empowering traditional acupuncture: AI exam prep | AI clinic setup | AI innovation</li>
+              </ul>
+              <h4>Featured Speakers</h4>
+              <ul>
+                <li>Dr. Frank Fu — AB Registered TCM Practitioner; Director, National Youth TCM Association</li>
+                <li>Dr. Chris Liao — Registered Osteopath (Canada); Traditional Rehabilitation Therapist</li>
+                <li>Dr. Zoe Zhao — AB Registered Massage Therapist; Heptathlete</li>
+                <li>Mack, AI Mentor — President, AI Association of North America; MIT AI Engineer</li>
+                <li>Chu Ran, Education Consultant — Founder of EZone Education Centre; Health Education &amp; Exhibition Consultant</li>
+              </ul>
+              <p class="event-signup">Register: scan the QR code, add us and reply “Forum” to register for the free forum<br />Phone: 778-316-5678 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="/events/edmonton-nov03.jpg" alt="Edmonton forum poster" />
+            <div class="event-info">
+              <span class="event-date">Tuesday, November 3 · 5:30 PM · Edmonton</span>
+              <h3>Edmonton</h3>
+              <p class="event-meta">Venue: #202, 9618 42 Avenue, Edmonton AB<br />Co-organizer: AmCan Group, Alberta Branch (AmCan)</p>
+              <h4>Forum Topics</h4>
+              <ul>
+                <li>Why become an acupuncturist?</li>
+                <li>The past, present &amp; future of Alberta's acupuncture profession</li>
+                <li>On-site free clinic by a Doctor of Medicine</li>
+                <li>What business opportunities remain in the health &amp; wellness industry?</li>
+                <li>Modern AI empowering traditional acupuncture: AI exam prep | AI clinic setup | AI innovation</li>
+              </ul>
+              <h4>Featured Speakers</h4>
+              <ul>
+                <li>Dr. Wang Fulin — Special Guest; Registered Acupuncturist; Co-founder of the Bethune Oriental Medicine Centre (1994)</li>
+                <li>Mack, AI Mentor — President, AI Association of North America; MIT AI Engineer</li>
+                <li>Chu Ran, Education Consultant — Founder of EZone Education Centre; Health Education &amp; Exhibition Consultant</li>
+              </ul>
+              <p class="event-signup">Register: scan the QR code, add us and reply “Forum” to register for the free forum<br />Phone: 778-316-5678 · www.vicvancouver.com</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <div class="logo"><img src="/3.png" alt="EZone Education Centre logo" /></div>
+          <p>Professional Education · Hands-On Training · Career Development</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">Home</a>
+          <a href="../programs/index.html">Programs</a>
+          <a href="../practice/index.html">Practice &amp; Development</a>
+          <a href="index.html">Events</a>
+          <a href="../about/index.html">About Us</a>
+          <a href="../contact/index.html">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://ezonedu.ca" target="_blank" rel="noreferrer">ezonedu.ca</a>
+          <a href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="#" target="_blank" rel="noreferrer">REDnote</a>
+          <a href="#" target="_blank" rel="noreferrer">WeChat</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> EZone Education Centre</p>
+      </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+  </body>
+</html>
